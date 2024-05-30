@@ -117,18 +117,19 @@ body {
 @media screen and (max-width:551px) {
     .container h1 {
         font-size: 24px;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .cell {
         border: 2px solid #fff;
-        height: 120px;
+        height: 100px;
         width: 40%;
         font-size: 50px;
     }
 
     .game-board {
         width: 70%;
+        height: 300px;
     }
 
     .player {
@@ -144,15 +145,16 @@ body {
         padding: 10px 30px;
     }
 
-    .container {
-        height: 120vh;
-    }
 }
 
 @media screen and (max-width:322px) {
     .player {
         font-size: 20px;
         font-weight: 50;
+    }
+
+    .container h1 {
+        font-size: 24px;
     }
 
     .restartBtn {
