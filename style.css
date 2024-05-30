@@ -20,7 +20,8 @@ body {
 }
 
 .container h1 {
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .game-board {
@@ -37,8 +38,8 @@ body {
 .cell {
     display: flex;
     flex: 0 0 33.3%;
-    border: 2px solid #fff;
     /*don't grow  dont't shrink width */
+    border: 2px solid #fff;
     height: 120px;
     width: 40px;
     justify-content: center;
@@ -113,16 +114,52 @@ body {
 }
 
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:551px) {
     .container h1 {
         font-size: 24px;
+        margin-top: 20px;
     }
 
     .cell {
-        display: flex;
-        flex: 0 0 33.3%;
-        height: 110px;
-        width: 30%;
-        font-size: 45px;
+        border: 2px solid #fff;
+        height: 120px;
+        width: 40%;
+        font-size: 50px;
+    }
+
+    .game-board {
+        width: 70%;
+    }
+
+    .player {
+        font-size: 25px;
+        font-weight: 100;
+    }
+
+    .restartBtn {
+        font-size: 20px;
+        font-weight: 650;
+        margin-block: 16px;
+        /*top+bottom margin = block*/
+        padding: 10px 30px;
+    }
+
+    .container {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width:322px) {
+    .player {
+        font-size: 20px;
+        font-weight: 50;
+    }
+
+    .restartBtn {
+        font-size: 20px;
+        font-weight: 600;
+        margin-block: 16px;
+        /*top+bottom margin = block*/
+        padding: 10px 30px;
     }
 }
